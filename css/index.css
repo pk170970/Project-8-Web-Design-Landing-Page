@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+:root{
+    --bg1:linear-gradient(to top right, #CAADF8 25%, #F9C2EF 71%);
+}
+body{
+    background: url(../images/backcover.svg) no-repeat;
+    background-size: 60% 100%;
+    height: 100vh;
+    background-position-x: 46vw;
+}
+.main-div{
+    width: 95vw;
+}
+
+/* -----------------------Navigation Section -------------------------------- */
+
+nav {
+    width: 95vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+nav img:first-child {
+    width: 10vw;
+    height: 5vh;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.signin-btn {
+    width: 105px;
+    height: 31px;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
+    cursor: pointer;
+}
+
+/* -------------------------------------------Intro Section------------------------------- */
+
+
+.intro-section {
+    width: 95vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ----------------------------Left Section--------------------- */
+.left-section {
+    width: 34vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.left-section h1 {
+    color: #3E4794;
+    margin: 84px 0px 44px 160px;
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+.left-section h4 {
+    color: #6F7392;
+    margin-left: 160px;
+    margin-right: 75px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.learn-more-btn {
+    width: 176px;
+    height: 50px;
+    border-radius: 27px;
+    border: none;
+    margin-left: 160px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background: linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+/* -------------------------------Right Section------------------------ */
+.imgs-div{
+    width: 49vw;
+    height: 83vh;
+}
+.imgs-div img:nth-child(1){
+    position: absolute;
+    top: 479px;
+    left: 700px;
+}
+.imgs-div img:nth-child(2){
+    position: absolute;
+    top: 494px;
+    left: 750px;
+}
+.imgs-div img:nth-child(3){
+    position: absolute;
+    top: 41px;
+    left: 770px;
+    width: 40vw;
+    height: 44vw;
+}

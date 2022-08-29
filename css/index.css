@@ -4,9 +4,212 @@
     box-sizing: border-box;
     font-family: 'Roboto';
 }
-:root{
-    --bg1:linear-gradient(to top right, #CAADF8 25%, #F9C2EF 71%);
+
+:root {
+    --bg1: linear-gradient(to top right, #CAADF8 25%, #F9C2EF 71%);
+    --bg2: linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
+
 }
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/backcover.svg") no-repeat;
+    background-size: 50% 110%;
+    background-position: right;
+
+}
+
+
+/* ------------------------------------------Navigation Section --------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    font-size: 1.2rem;
+}
+
+.signin-btn {
+    padding: 0.6em 2em;
+    border-radius: 25px;
+    background: var(--bg2);
+    border: none;
+    color: white;
+}
+
+
+@media (max-width:800px) {
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+}
+
+
+
+/* ------------------------------------------Intro Section --------------------- */
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 30%;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.left-section h1 {
+    font-size: 3.5em;
+    color: #3E4794;
+}
+
+.left-section h4 {
+    font-size: 1.3em;
+    color: #6F7392;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    padding: 1.2em 1em;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 35%;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    background: var(--bg2);
+    color: white;
+    border: none;
+}
+
+
+.imgs-div {
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.vectors {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 10%;
+    justify-content: flex-start;
+    height: 10%;
+    position: relative;
+    padding-bottom: 8em;
+}
+
+.vector-dot {
+    width: 25%;
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    right: 18px;
+}
+
+.intro-img {
+    width: 70%;
+    height: 60%;
+}
+
+
+
+
+@media (max-width:1300px) {
+    .left-section {
+        font-size: 0.7em;
+    }
+}
+
+
+@media (max-width:850px) {
+    .main-div {
+        background-size: 55% 120%;
+    }
+
+    .left-section {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:650px) {
+
+    .main-div {
+        background: unset;
+        padding: 2em 0;
+    }
+
+    .intro-section {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 3em 0;
+        gap: 1em;
+    }
+
+    .left-section {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        gap: 1em;
+
+    }
+
+    .vectors {
+        display: none;
+    }
+
+    .imgs-div {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro-img {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 body{
     background: url(../images/backcover.svg) no-repeat;
     background-size: 60% 100%;
@@ -17,7 +220,7 @@ body{
     width: 95vw;
 }
 
-/* -----------------------Navigation Section -------------------------------- */
+-----------------------Navigation Section -------------------------------- 
 
 nav {
     width: 95vw;
@@ -53,10 +256,7 @@ nav img:first-child {
     color: #ffffff;
     background: linear-gradient(to right, #965CF2 0%, #FF8ADC 100%);
     cursor: pointer;
-}
-
-/* -------------------------------------------Intro Section------------------------------- */
-
+/* -------------------------------------------Intro Section------------------------------- 
 
 .intro-section {
     width: 95vw;
@@ -65,7 +265,7 @@ nav img:first-child {
     grid-template-columns: 1fr 1fr;
 }
 
-/* ----------------------------Left Section--------------------- */
+/* ----------------------------Left Section--------------------- 
 .left-section {
     width: 34vw;
     height: 70vh;
@@ -102,7 +302,7 @@ nav img:first-child {
     cursor: pointer;
 }
 
-/* -------------------------------Right Section------------------------ */
+/* -------------------------------Right Section------------------------ 
 .imgs-div{
     width: 49vw;
     height: 83vh;
@@ -123,4 +323,6 @@ nav img:first-child {
     left: 770px;
     width: 40vw;
     height: 44vw;
-}
+} 
+
+*/
